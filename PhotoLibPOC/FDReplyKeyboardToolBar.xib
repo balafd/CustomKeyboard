@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDReplyKeyboardToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DV4-Fj-gqq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.96840542554855347" green="0.97255235910415649" blue="0.97656112909317017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <barButtonItem title="Keyboard" id="uX3-RF-3H5">
+                            <connections>
+                                <action selector="tappedButton:" destination="iN0-l3-epB" id="GL6-ZZ-Dzk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Y7v-Kw-QLE"/>
+                        <barButtonItem tag="1" title="Canned" id="QnA-FE-vnF">
+                            <connections>
+                                <action selector="tappedButton:" destination="iN0-l3-epB" id="l2A-C1-852"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="zzw-zp-22d"/>
+                        <barButtonItem tag="2" title="Solution" id="74f-xS-zGR">
+                            <connections>
+                                <action selector="tappedButton:" destination="iN0-l3-epB" id="TWm-8W-nTC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="bCM-IW-8Eu"/>
+                        <barButtonItem tag="3" title="Attachment" id="yHx-1Y-0bm">
+                            <connections>
+                                <action selector="tappedButton:" destination="iN0-l3-epB" id="i5o-9u-wQU"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="toolBar" destination="DV4-Fj-gqq" id="wZG-gx-55m"/>
+            </connections>
+            <point key="canvasLocation" x="507.5" y="-668"/>
+        </view>
+    </objects>
+</document>
