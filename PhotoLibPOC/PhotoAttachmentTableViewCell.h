@@ -11,5 +11,4 @@
 
 @interface PhotoAttachmentTableViewCell : UITableViewCell <AttachmentPhotoCellProtocol>
 
-
 @end

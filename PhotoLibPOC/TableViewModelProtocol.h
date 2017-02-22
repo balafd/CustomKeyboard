@@ -39,7 +39,7 @@
  @param section An index number identifying a section in view. This index value is 0-based.
  @return A reuse identifier string that is used to identify the corresponding cell for the section.
  */
-- (NSString *)identifierForItemAtSection:(NSInteger)section;
+- (NSString *)identifierForItemAtRow:(NSInteger)row inSection:(NSInteger)section;
 
 /**
  Returns the data of the corresponding item that the cell will use to set any properties & perform any additional needed configuration, for the specified section.
@@ -52,8 +52,8 @@
  */
 - (id)dataForItemAtRow:(NSInteger)row inSection:(NSInteger)section;
 
-
 - (void)didTapItemAtRow:(NSInteger)row inSection:(NSInteger)section;
 
+- (CGFloat)heightForItemAtRow:(NSInteger)row inSection:(NSInteger)section;
 
 @end

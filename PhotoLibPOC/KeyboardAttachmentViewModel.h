@@ -1,5 +1,5 @@
 //
-//  KeyboardAttchmentViewModel.h
+//  KeyboardAttachmentViewModel.h
 //  PhotoLibPOC
 //
 //  Created by Bala on 21/02/17.
@@ -10,6 +10,6 @@
 @import CoreGraphics;
 #import "TableViewModelProtocol.h"
 
-@interface KeyboardAttchmentViewModel : NSObject <TableViewModelProtocol>
+@interface KeyboardAttachmentViewModel : NSObject <TableViewModelProtocol>
 
 @end

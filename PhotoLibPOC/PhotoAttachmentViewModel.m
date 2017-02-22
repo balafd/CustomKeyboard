@@ -1,19 +1,19 @@
 //
-//  AttachmentsControllerViewModel.m
+//  PhotoAttachmentViewModel.m
 //  PhotoLibPOC
 //
 //  Created by Bala on 20/02/17.
 //  Copyright © 2017 Freshdesk Inc. All rights reserved.
 //
 
-#import "AttachmentsControllerViewModel.h"
+#import "PhotoAttachmentViewModel.h"
 #import "PhotoAttachmentCellViewModel.h"
 @import Photos;
 
 NSString * const kAttachmentPhotoCollectionViewCellIdentifier = @"PhotoCollectionViewCell";
 static const NSInteger kRecentPhotosFetchLimitCount = 20;
 
-@interface AttachmentsControllerViewModel () {
+@interface PhotoAttachmentViewModel () {
     // Recent 20 photos, Sorted by creation date
     NSMutableArray *recentPhotos;
     
@@ -25,7 +25,7 @@ static const NSInteger kRecentPhotosFetchLimitCount = 20;
 
 @end
 
-@implementation AttachmentsControllerViewModel
+@implementation PhotoAttachmentViewModel
 
 - (instancetype)init {
     self = [super init];

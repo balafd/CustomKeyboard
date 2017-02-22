@@ -10,5 +10,4 @@
 
 @interface KeyboardAttachmentViewController : UIViewController
 
-- (void)loadRecentPhotos;
 @end

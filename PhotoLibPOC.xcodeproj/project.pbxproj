@@ -19,10 +19,10 @@
 		2DAAD7A21E5463E9000BE0A2 /* CannedResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAAD7A11E5463E9000BE0A2 /* CannedResponseViewController.m */; };
 		2DCF16EC1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16EB1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.m */; };
 		2DCF16F21E5B097600A9DF88 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16F11E5B097600A9DF88 /* PhotoCollectionViewCell.m */; };
-		2DCF16F51E5B1CC300A9DF88 /* AttachmentsControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16F41E5B1CC300A9DF88 /* AttachmentsControllerViewModel.m */; };
+		2DCF16F51E5B1CC300A9DF88 /* PhotoAttachmentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16F41E5B1CC300A9DF88 /* PhotoAttachmentViewModel.m */; };
 		2DCF16F91E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16F81E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m */; };
 		2DCF16FF1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16FE1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m */; };
-		2DCF17021E5C677400A9DF88 /* KeyboardAttchmentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF17011E5C677400A9DF88 /* KeyboardAttchmentViewModel.m */; };
+		2DCF17021E5C677400A9DF88 /* KeyboardAttachmentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF17011E5C677400A9DF88 /* KeyboardAttachmentViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,15 +47,15 @@
 		2DCF16EB1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAttachmentViewController.m; sourceTree = "<group>"; };
 		2DCF16F01E5B097600A9DF88 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		2DCF16F11E5B097600A9DF88 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
-		2DCF16F31E5B1CC300A9DF88 /* AttachmentsControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentsControllerViewModel.h; sourceTree = "<group>"; };
-		2DCF16F41E5B1CC300A9DF88 /* AttachmentsControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentsControllerViewModel.m; sourceTree = "<group>"; };
+		2DCF16F31E5B1CC300A9DF88 /* PhotoAttachmentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAttachmentViewModel.h; sourceTree = "<group>"; };
+		2DCF16F41E5B1CC300A9DF88 /* PhotoAttachmentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAttachmentViewModel.m; sourceTree = "<group>"; };
 		2DCF16F61E5B61FF00A9DF88 /* AttachmentPhotoCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentPhotoCellProtocol.h; sourceTree = "<group>"; };
 		2DCF16F71E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAttachmentCellViewModel.h; sourceTree = "<group>"; };
 		2DCF16F81E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAttachmentCellViewModel.m; sourceTree = "<group>"; };
 		2DCF16FD1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAttachmentTableViewCell.h; sourceTree = "<group>"; };
 		2DCF16FE1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAttachmentTableViewCell.m; sourceTree = "<group>"; };
-		2DCF17001E5C677400A9DF88 /* KeyboardAttchmentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAttchmentViewModel.h; sourceTree = "<group>"; };
-		2DCF17011E5C677400A9DF88 /* KeyboardAttchmentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAttchmentViewModel.m; sourceTree = "<group>"; };
+		2DCF17001E5C677400A9DF88 /* KeyboardAttachmentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAttachmentViewModel.h; sourceTree = "<group>"; };
+		2DCF17011E5C677400A9DF88 /* KeyboardAttachmentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAttachmentViewModel.m; sourceTree = "<group>"; };
 		2DCF17031E5C67E600A9DF88 /* TableViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewModelProtocol.h; sourceTree = "<group>"; };
 		2DCF17041E5C691800A9DF88 /* CollectionViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModelProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,12 +106,12 @@
 				2DAAD7A11E5463E9000BE0A2 /* CannedResponseViewController.m */,
 				2DCF16EA1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.h */,
 				2DCF16EB1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.m */,
-				2DCF16F31E5B1CC300A9DF88 /* AttachmentsControllerViewModel.h */,
-				2DCF16F41E5B1CC300A9DF88 /* AttachmentsControllerViewModel.m */,
 				2DCF17031E5C67E600A9DF88 /* TableViewModelProtocol.h */,
-				2DCF17001E5C677400A9DF88 /* KeyboardAttchmentViewModel.h */,
-				2DCF17011E5C677400A9DF88 /* KeyboardAttchmentViewModel.m */,
+				2DCF17001E5C677400A9DF88 /* KeyboardAttachmentViewModel.h */,
+				2DCF17011E5C677400A9DF88 /* KeyboardAttachmentViewModel.m */,
 				2DCF17041E5C691800A9DF88 /* CollectionViewModelProtocol.h */,
+				2DCF16F31E5B1CC300A9DF88 /* PhotoAttachmentViewModel.h */,
+				2DCF16F41E5B1CC300A9DF88 /* PhotoAttachmentViewModel.m */,
 				2DCF16FD1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.h */,
 				2DCF16FE1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m */,
 				2DCF16F01E5B097600A9DF88 /* PhotoCollectionViewCell.h */,
@@ -223,9 +223,9 @@
 				2DCF16FF1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m in Sources */,
 				2D7E29F31E4C8C2500120685 /* AppDelegate.m in Sources */,
 				2D7E29F01E4C8C2500120685 /* main.m in Sources */,
-				2DCF16F51E5B1CC300A9DF88 /* AttachmentsControllerViewModel.m in Sources */,
+				2DCF16F51E5B1CC300A9DF88 /* PhotoAttachmentViewModel.m in Sources */,
 				2DCF16EC1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.m in Sources */,
-				2DCF17021E5C677400A9DF88 /* KeyboardAttchmentViewModel.m in Sources */,
+				2DCF17021E5C677400A9DF88 /* KeyboardAttachmentViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

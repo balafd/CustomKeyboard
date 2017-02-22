@@ -109,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="137" y="781"/>
         </scene>
-        <!--Keyboard Attachment View Controller-->
+        <!--View Controller-->
         <scene sceneID="1eZ-vt-nPH">
             <objects>
-                <viewController storyboardIdentifier="KeyboardAttachmentViewController" id="kci-pY-TiQ" customClass="KeyboardAttachmentViewController" sceneMemberID="viewController">
+                <viewController id="kci-pY-TiQ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vCf-kv-fHB"/>
                         <viewControllerLayoutGuide type="bottom" id="hhk-Ts-Hg9"/>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="949.60000000000002" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--Keyboard Attachment View Controller-->
         <scene sceneID="KuH-GX-L8q">
             <objects>
-                <viewController id="SwW-Bx-M1L" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KeyboardAttachmentViewController" id="SwW-Bx-M1L" customClass="KeyboardAttachmentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y7i-SE-qg8"/>
                         <viewControllerLayoutGuide type="bottom" id="vHg-cp-E56"/>
@@ -213,7 +213,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="157" id="Rv2-dM-K07">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PhotoAttachmentTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhotoAttachmentCell" rowHeight="157" id="Rv2-dM-K07" customClass="PhotoAttachmentTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rv2-dM-K07" id="bJB-eg-ug1">
@@ -222,8 +222,8 @@
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-In-oti">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="156.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Aa7-cc-NcR">
+                                                    <color key="backgroundColor" red="0.96840542549999997" green="0.97255235910000004" blue="0.97656112910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Aa7-cc-NcR">
                                                         <size key="itemSize" width="50" height="50"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -231,7 +231,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PhotoCollectionViewCell" reuseIdentifier="PhotoCollectionViewCell" id="Hth-pn-A9q" customClass="PhotoCollectionViewCell">
-                                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                            <rect key="frame" x="0.0" y="13" width="130" height="130"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
@@ -262,6 +262,10 @@
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="Rv2-dM-K07" id="Qt8-di-d0L"/>
+                                                        <outlet property="delegate" destination="Rv2-dM-K07" id="dPJ-o1-VnS"/>
+                                                    </connections>
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
@@ -271,19 +275,26 @@
                                                 <constraint firstAttribute="trailing" secondItem="M7I-In-oti" secondAttribute="trailing" id="DBq-XW-MYM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="M7I-In-oti" id="WuP-Mw-HPF"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="157" id="kK3-fX-tYz">
-                                        <rect key="frame" x="0.0" y="185" width="375" height="157"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OtherAttachmentCell" rowHeight="62" id="kK3-fX-tYz">
+                                        <rect key="frame" x="0.0" y="185" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kK3-fX-tYz" id="3ef-6g-fb5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SwW-Bx-M1L" id="guv-hH-Ie6"/>
+                                    <outlet property="delegate" destination="SwW-Bx-M1L" id="hXB-go-6Qc"/>
+                                </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92907601594924927" green="0.9371982216835022" blue="0.94539719820022583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vHg-cp-E56" firstAttribute="top" secondItem="8CH-Wk-4UF" secondAttribute="bottom" id="5hR-Ik-Ygj"/>
                             <constraint firstItem="8CH-Wk-4UF" firstAttribute="top" secondItem="hi8-uz-XyX" secondAttribute="top" id="AW1-Lh-SR5"/>
@@ -291,10 +302,13 @@
                             <constraint firstItem="8CH-Wk-4UF" firstAttribute="leading" secondItem="hi8-uz-XyX" secondAttribute="leading" id="vx6-k0-Qaf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="attachmentOptionsTableView" destination="8CH-Wk-4UF" id="Aft-kT-DHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHN-rg-YZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="67"/>
+            <point key="canvasLocation" x="1796" y="66.11694152923539"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ayk-fE-L4a">
