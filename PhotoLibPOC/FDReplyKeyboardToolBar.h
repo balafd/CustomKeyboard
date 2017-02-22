@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, FDReplyKeyboardInputType) {
 
 @protocol FDReplyKeyboardProtocol <NSObject>
 
-- (void)didChangeKeyboardInputType:(NSInteger)type;
+- (void)didChangeKeyboardInputType:(FDReplyKeyboardInputType)type;
 
 @end
 

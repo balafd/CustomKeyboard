@@ -83,9 +83,9 @@
     return YES;
 }
 
-- (void)reloadInputViewForKeyboardInputType:(NSInteger)type {
+- (void)reloadInputViewForKeyboardInputType:(FDReplyKeyboardInputType)type {
      //TODO: ⚠️ Warning: Change according to Finite State Pattern
-    if (type != 0) {
+    if (type != FDReplyKeyboardPlainInputType) {
         
         _sampleWebView.cjw_inputView = _keyboardCustomView;
         _sampleTextField.inputView = _keyboardCustomView;
@@ -106,9 +106,11 @@
             [self addSubview:redView toView:_keyboardCustomView];
         }
     } else {
+        // Assigning nil to inputView, will displays the standard system keyboard when it becomes first responder.
         _sampleTextField.inputView = nil;
         _sampleWebView.cjw_inputView = nil;
     }
+    
     [_sampleTextField reloadInputViews];
     [_sampleWebView reloadInputViews];
 }
@@ -161,7 +163,7 @@
     [self.sampleWebView reload];
 }
 
-- (void)didChangeKeyboardInputType:(NSInteger)type {
+- (void)didChangeKeyboardInputType:(FDReplyKeyboardInputType)type {
     
     [self reloadInputViewForKeyboardInputType:type];
 }
