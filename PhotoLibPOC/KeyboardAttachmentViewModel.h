@@ -12,4 +12,6 @@
 
 @interface KeyboardAttachmentViewModel : NSObject <TableViewModelProtocol>
 
+@property (nonatomic, strong) NSArray *attachedPhotos;
+
 @end

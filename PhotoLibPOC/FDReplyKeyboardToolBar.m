@@ -32,7 +32,7 @@
 
 + (instancetype) loadView {
     
-    FDReplyKeyboardToolBar *myCustomXIBViewObj = [[[NSBundle mainBundle] loadNibNamed:@"FDReplyKeyboardToolBar" owner:self                                                                                  options:nil] lastObject];
+    FDReplyKeyboardToolBar *myCustomXIBViewObj = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self                                                                                  options:nil] lastObject];
     return myCustomXIBViewObj;                     
 }
 
@@ -41,9 +41,8 @@
     self = [super init];
     if (self) {
         NSLog(@"TOOL BAR");
-        FDReplyKeyboardToolBar *myCustomXIBViewObj = [[[NSBundle mainBundle] loadNibNamed:@"FDReplyKeyboardToolBar" owner:self options:nil] objectAtIndex:0];
+        FDReplyKeyboardToolBar *myCustomXIBViewObj = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] objectAtIndex:0];
         [self addSubview:myCustomXIBViewObj];
-
     }
     return self;
 }
@@ -51,7 +50,21 @@
 - (IBAction)tappedButton:(id)sender {
     
     NSInteger tag = [sender tag];
+    if (_keyboardInputType == tag) {
+        return;
+    }
+    
+    for (UIBarButtonItem *item in _toolBar.items) {
+        if (item.tag == _keyboardInputType) {
+            [item setTintColor:[UIColor colorWithRed:131/255.0 green:131/255.0 blue:131/255.0 alpha:1]];
+            break;
+        }
+    }
     _keyboardInputType = tag;
+    UIBarButtonItem *selectedButton = (UIBarButtonItem *)sender;
+    [selectedButton setTintColor:[UIColor blackColor]];
+    
+    NSLog(@"Change the button State");
     switch (tag) {
         case 0:
             NSLog(@"Normal Plain Keyboard");

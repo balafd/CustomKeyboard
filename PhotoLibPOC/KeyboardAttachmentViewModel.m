@@ -9,6 +9,9 @@
 #import "KeyboardAttachmentViewModel.h"
 #import "PhotoAttachmentViewModel.h"
 
+NSString *const kPhotoAttachmentCell = @"PhotoAttachmentCell";
+NSString *const kOtherAttachmentCell = @"OtherAttachmentCell";
+
 @interface KeyboardAttachmentViewModel () {
     NSMutableArray *attachmentsOptions;
 }
@@ -25,6 +28,8 @@
         
         PhotoAttachmentViewModel *photoAttachmentViewModel = [PhotoAttachmentViewModel new];
         [attachmentsOptions addObject:photoAttachmentViewModel];
+        [attachmentsOptions addObject:@"Choose from Photos"];
+        [attachmentsOptions addObject:@"Another Option"];
     }
     return self;
 }
@@ -42,6 +47,7 @@
 }
 
 - (NSString *)identifierForItemAtRow:(NSInteger)row inSection:(NSInteger)section {
+    
     if (row == 0) {
         return @"PhotoAttachmentCell";
     }
@@ -61,7 +67,7 @@
     if (row == 0) {
         return 160;
     }
-    return 40;
+    return 45;
 }
 
 @end

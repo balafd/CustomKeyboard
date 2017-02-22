@@ -56,7 +56,6 @@
 - (KeyboardAttachmentViewController *)attachmentsViewController {
     
     if (!_attachmentsVC) {
-        
         _attachmentsVC = (KeyboardAttachmentViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"KeyboardAttachmentViewController"];
         _attachmentsVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _attachmentsVC.view.translatesAutoresizingMaskIntoConstraints = NO;
@@ -85,6 +84,10 @@
 
 - (void)reloadInputViewForKeyboardInputType:(FDReplyKeyboardInputType)type {
      //TODO: ⚠️ Warning: Change according to Finite State Pattern
+    
+    
+    
+    
     if (type != FDReplyKeyboardPlainInputType) {
         
         _sampleWebView.cjw_inputView = _keyboardCustomView;
@@ -137,6 +140,7 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
+    
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {

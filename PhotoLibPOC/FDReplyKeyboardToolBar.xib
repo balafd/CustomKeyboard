@@ -44,6 +44,7 @@
                             </connections>
                         </barButtonItem>
                     </items>
+                    <color key="tintColor" red="0.51356220245361328" green="0.51769661903381348" blue="0.51762843132019043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </toolbar>
             </subviews>
             <nil key="simulatedStatusBarMetrics"/>

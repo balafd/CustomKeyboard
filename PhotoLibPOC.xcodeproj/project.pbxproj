@@ -23,6 +23,8 @@
 		2DCF16F91E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16F81E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m */; };
 		2DCF16FF1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF16FE1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m */; };
 		2DCF17021E5C677400A9DF88 /* KeyboardAttachmentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF17011E5C677400A9DF88 /* KeyboardAttachmentViewModel.m */; };
+		2DCF170D1E5D9F5600A9DF88 /* OtherAttachmentOptionsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF170C1E5D9F5600A9DF88 /* OtherAttachmentOptionsTableCell.m */; };
+		2DCF17161E5DB8CC00A9DF88 /* FDBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF17151E5DB8CC00A9DF88 /* FDBorderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,10 @@
 		2DCF17011E5C677400A9DF88 /* KeyboardAttachmentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAttachmentViewModel.m; sourceTree = "<group>"; };
 		2DCF17031E5C67E600A9DF88 /* TableViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewModelProtocol.h; sourceTree = "<group>"; };
 		2DCF17041E5C691800A9DF88 /* CollectionViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModelProtocol.h; sourceTree = "<group>"; };
+		2DCF170B1E5D9F5600A9DF88 /* OtherAttachmentOptionsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherAttachmentOptionsTableCell.h; sourceTree = "<group>"; };
+		2DCF170C1E5D9F5600A9DF88 /* OtherAttachmentOptionsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherAttachmentOptionsTableCell.m; sourceTree = "<group>"; };
+		2DCF17141E5DB8CB00A9DF88 /* PhotoLibPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoLibPOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DCF17151E5DB8CC00A9DF88 /* FDBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDBorderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,25 +106,10 @@
 				2D7E29FF1E4C8C2500120685 /* Info.plist */,
 				2D7E29EE1E4C8C2500120685 /* Supporting Files */,
 				2DCF17051E5C6B7400A9DF88 /* FDKeyboardToolBar */,
-				2D33594C1E4CEE1F001BA466 /* UIWebView+InputAccessoryView.h */,
-				2D33594D1E4CEE1F001BA466 /* UIWebView+InputAccessoryView.m */,
-				2DAAD7A01E5463E9000BE0A2 /* CannedResponseViewController.h */,
-				2DAAD7A11E5463E9000BE0A2 /* CannedResponseViewController.m */,
-				2DCF16EA1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.h */,
-				2DCF16EB1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.m */,
-				2DCF17031E5C67E600A9DF88 /* TableViewModelProtocol.h */,
-				2DCF17001E5C677400A9DF88 /* KeyboardAttachmentViewModel.h */,
-				2DCF17011E5C677400A9DF88 /* KeyboardAttachmentViewModel.m */,
-				2DCF17041E5C691800A9DF88 /* CollectionViewModelProtocol.h */,
-				2DCF16F31E5B1CC300A9DF88 /* PhotoAttachmentViewModel.h */,
-				2DCF16F41E5B1CC300A9DF88 /* PhotoAttachmentViewModel.m */,
-				2DCF16FD1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.h */,
-				2DCF16FE1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m */,
-				2DCF16F01E5B097600A9DF88 /* PhotoCollectionViewCell.h */,
-				2DCF16F11E5B097600A9DF88 /* PhotoCollectionViewCell.m */,
-				2DCF16F61E5B61FF00A9DF88 /* AttachmentPhotoCellProtocol.h */,
-				2DCF16F71E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.h */,
-				2DCF16F81E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m */,
+				2DCF17061E5D8E3C00A9DF88 /* WebView Category */,
+				2DCF17071E5D8E4F00A9DF88 /* CustomKeyboards */,
+				2DCF17151E5DB8CC00A9DF88 /* FDBorderView.swift */,
+				2DCF17141E5DB8CB00A9DF88 /* PhotoLibPOC-Bridging-Header.h */,
 			);
 			path = PhotoLibPOC;
 			sourceTree = "<group>";
@@ -139,6 +130,65 @@
 				2D7E2A081E4C985C00120685 /* FDReplyKeyboardToolBar.xib */,
 			);
 			name = FDKeyboardToolBar;
+			sourceTree = "<group>";
+		};
+		2DCF17061E5D8E3C00A9DF88 /* WebView Category */ = {
+			isa = PBXGroup;
+			children = (
+				2D33594C1E4CEE1F001BA466 /* UIWebView+InputAccessoryView.h */,
+				2D33594D1E4CEE1F001BA466 /* UIWebView+InputAccessoryView.m */,
+			);
+			name = "WebView Category";
+			sourceTree = "<group>";
+		};
+		2DCF17071E5D8E4F00A9DF88 /* CustomKeyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2DCF17081E5D8E6400A9DF88 /* CannedResponceKeyboard */,
+				2DCF17091E5D8E7500A9DF88 /* AttachmentKeyboard */,
+			);
+			name = CustomKeyboards;
+			sourceTree = "<group>";
+		};
+		2DCF17081E5D8E6400A9DF88 /* CannedResponceKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2DAAD7A01E5463E9000BE0A2 /* CannedResponseViewController.h */,
+				2DAAD7A11E5463E9000BE0A2 /* CannedResponseViewController.m */,
+			);
+			name = CannedResponceKeyboard;
+			sourceTree = "<group>";
+		};
+		2DCF17091E5D8E7500A9DF88 /* AttachmentKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2DCF16EA1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.h */,
+				2DCF16EB1E5AEE8A00A9DF88 /* KeyboardAttachmentViewController.m */,
+				2DCF17031E5C67E600A9DF88 /* TableViewModelProtocol.h */,
+				2DCF17001E5C677400A9DF88 /* KeyboardAttachmentViewModel.h */,
+				2DCF17011E5C677400A9DF88 /* KeyboardAttachmentViewModel.m */,
+				2DCF170A1E5D985000A9DF88 /* PhotoAttachments */,
+				2DCF170B1E5D9F5600A9DF88 /* OtherAttachmentOptionsTableCell.h */,
+				2DCF170C1E5D9F5600A9DF88 /* OtherAttachmentOptionsTableCell.m */,
+			);
+			name = AttachmentKeyboard;
+			sourceTree = "<group>";
+		};
+		2DCF170A1E5D985000A9DF88 /* PhotoAttachments */ = {
+			isa = PBXGroup;
+			children = (
+				2DCF16F61E5B61FF00A9DF88 /* AttachmentPhotoCellProtocol.h */,
+				2DCF16F71E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.h */,
+				2DCF16F81E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m */,
+				2DCF17041E5C691800A9DF88 /* CollectionViewModelProtocol.h */,
+				2DCF16F31E5B1CC300A9DF88 /* PhotoAttachmentViewModel.h */,
+				2DCF16F41E5B1CC300A9DF88 /* PhotoAttachmentViewModel.m */,
+				2DCF16FD1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.h */,
+				2DCF16FE1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m */,
+				2DCF16F01E5B097600A9DF88 /* PhotoCollectionViewCell.h */,
+				2DCF16F11E5B097600A9DF88 /* PhotoCollectionViewCell.m */,
+			);
+			name = PhotoAttachments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +223,7 @@
 					2D7E29EA1E4C8C2500120685 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PKUQ4ZWJH3;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -218,6 +269,8 @@
 				2DAAD7A21E5463E9000BE0A2 /* CannedResponseViewController.m in Sources */,
 				2DCF16F21E5B097600A9DF88 /* PhotoCollectionViewCell.m in Sources */,
 				2DCF16F91E5C091B00A9DF88 /* PhotoAttachmentCellViewModel.m in Sources */,
+				2DCF17161E5DB8CC00A9DF88 /* FDBorderView.swift in Sources */,
+				2DCF170D1E5D9F5600A9DF88 /* OtherAttachmentOptionsTableCell.m in Sources */,
 				2D7E29F61E4C8C2500120685 /* ViewController.m in Sources */,
 				2D7E2A071E4C984700120685 /* FDReplyKeyboardToolBar.m in Sources */,
 				2DCF16FF1E5C56F300A9DF88 /* PhotoAttachmentTableViewCell.m in Sources */,
@@ -343,11 +396,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PKUQ4ZWJH3;
 				INFOPLIST_FILE = PhotoLibPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshdesk.PhotoLibPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoLibPOC/PhotoLibPOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -355,11 +412,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PKUQ4ZWJH3;
 				INFOPLIST_FILE = PhotoLibPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshdesk.PhotoLibPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoLibPOC/PhotoLibPOC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

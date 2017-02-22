@@ -28,6 +28,7 @@
 }
 
 - (void)configureCell:(id)data withDelegate:(id)delegate {
+    
     if ([data isKindOfClass:[PhotoAttachmentViewModel class]]) {
         viewModel = data;
         [viewModel loadRecentPhotos:^{

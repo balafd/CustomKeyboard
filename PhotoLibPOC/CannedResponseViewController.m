@@ -29,7 +29,6 @@
         UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(close)];
         self.navigationItem.rightBarButtonItem = button;
     }
-    NSLog(@"Self %@",self);
 }
 
 - (void)didReceiveMemoryWarning {
